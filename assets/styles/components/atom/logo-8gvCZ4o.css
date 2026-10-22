@@ -1,6 +1,6 @@
 .a-logo {
   font-family: var(--font-display);
-  font-weight: 900;
+  font-weight: var(--display-weight);
   font-size: 38px;
   line-height: 0.9;
   letter-spacing: 0.01em;

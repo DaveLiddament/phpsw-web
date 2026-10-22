@@ -13,8 +13,8 @@
 .t-detail__title {
   margin-top: 14px;
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
   font-size: var(--fs-display-lg);
   line-height: 0.84;
   max-width: 12ch;

@@ -1,7 +1,7 @@
 .o-year-group { margin-top: clamp(40px, 5vw, 64px); scroll-margin-top: 16px; }
 .o-year-group__year {
   font-family: var(--font-display);
-  font-weight: 900;
+  font-weight: var(--display-weight);
   font-size: var(--fs-year);
   line-height: var(--lh-display-tight);
   border-bottom: var(--rule);

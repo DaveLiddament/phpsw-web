@@ -8,10 +8,10 @@
 }
 .m-stat-figure__value {
   font-family: var(--font-display);
-  font-weight: 900;
+  font-weight: var(--display-weight);
   font-size: var(--fs-display-md);
   line-height: 0.9;
   color: var(--color-pink);
-  mix-blend-mode: multiply;
+  mix-blend-mode: var(--blend);
 }
 .m-stat-figure__label { font-size: var(--fs-ui); font-weight: 700; text-transform: uppercase; }

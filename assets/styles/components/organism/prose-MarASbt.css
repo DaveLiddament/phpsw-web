@@ -3,8 +3,8 @@
 .o-prose h2 {
   margin: 36px 0 12px;
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
   font-size: clamp(28px, 3vw, 40px);
   line-height: 0.95;
 }

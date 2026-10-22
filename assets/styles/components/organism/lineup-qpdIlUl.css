@@ -3,8 +3,8 @@
 .o-lineup-single__title {
   margin-top: 14px;
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
   font-size: var(--fs-title-single);
   line-height: var(--lh-display);
   letter-spacing: -0.005em;

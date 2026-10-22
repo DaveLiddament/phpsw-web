@@ -11,8 +11,8 @@
 .m-lineup-item:hover { color: var(--color-pink-text); }
 .m-lineup-item__title {
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
   line-height: 0.88;
 }
 .m-lineup-item__title--two { font-size: var(--fs-lineup-2); }

@@ -12,3 +12,4 @@
 }
 .o-site-header__brand { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
 .o-site-header__tagline { max-width: 34ch; line-height: 1.35; }
+.o-site-header__end { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; }

@@ -1,11 +1,12 @@
 .a-speaker-tag, .a-tag {
   display: inline-block;
   background: var(--color-pink);
-  mix-blend-mode: multiply;
-  color: var(--color-ink);
+  mix-blend-mode: var(--blend);
+  border-radius: var(--radius);
+  color: var(--color-on-accent);
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
   line-height: 1;
   text-decoration: none;
   padding: 3px 8px 1px;

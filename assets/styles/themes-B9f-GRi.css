@@ -1,0 +1,103 @@
+/*
+ * Skins. Each one only overrides tokens (tokens.css), on <html data-theme="…">,
+ * so every page and component works in every skin. No data-theme = Handbill,
+ * the original design. The picker is Molecule:ThemePicker in the site header.
+ */
+
+/* Night shift: the handbill after dark. */
+:root[data-theme="night-shift"] {
+  --color-paper: #161a33;
+  --color-paper-hover: #20264a;
+  --color-ink: #efe8d8;
+  --color-pink: oklch(0.72 0.2 0);
+  --color-pink-text: oklch(0.8 0.15 0);
+  --color-link-hover: oklch(0.8 0.15 0);
+  --color-placeholder: #9aa0c2;
+  --color-stripe: #1e2345;
+  --color-on-accent: #161a33;
+  --color-on-photo: #efe8d8;
+  --blend: normal;
+}
+
+/* Terminal: green phosphor, amber highlights. */
+:root[data-theme="terminal"] {
+  --color-paper: #0b0f0b;
+  --color-paper-hover: #132013;
+  --color-ink: #8cff98;
+  --color-pink: #ffb000;
+  --color-pink-text: #ffc94d;
+  --color-link-hover: #ffc94d;
+  --color-placeholder: #5f9466;
+  --color-stripe: #112011;
+  --color-on-accent: #0b0f0b;
+  --color-on-photo: #eaffec;
+  --font-display: 'VT323', ui-monospace, monospace;
+  --font-body: 'IBM Plex Mono', ui-monospace, monospace;
+  --display-weight: 400;
+  --rule: 2px solid var(--color-ink);
+  --blend: normal;
+  --photo-filter: grayscale(1) contrast(1.4) brightness(1.2);
+}
+
+/* Swiss: white, black and one red; sentence-case grotesk. */
+:root[data-theme="swiss"] {
+  --color-paper: #f7f7f5;
+  --color-paper-hover: #ebebe8;
+  --color-ink: #111111;
+  --color-pink: #e3000f;
+  --color-pink-text: #c2000d;
+  --color-link-hover: #e3000f;
+  --color-placeholder: #6b6b6b;
+  --color-stripe: #ebebe8;
+  --color-on-accent: #ffffff;
+  --color-on-photo: #ffffff;
+  --font-display: 'Inter Tight', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --display-case: none;
+  --display-weight: 800;
+  --display-scale: 0.72;
+  --rule: 2px solid var(--color-ink);
+  --blend: normal;
+}
+
+/* Elephpant: PHP's own blue-violet, rounded and friendly. */
+:root[data-theme="elephpant"] {
+  --color-paper: #f4f3fb;
+  --color-paper-hover: #e8e6f6;
+  --color-ink: #2d2b55;
+  --color-pink: #8892bf;
+  --color-pink-text: #4f57a0;
+  --color-link-hover: #4f57a0;
+  --color-placeholder: #6e6c93;
+  --color-stripe: #e9e7f5;
+  --color-on-photo: #ffffff;
+  --font-display: 'Fredoka', 'Trebuchet MS', sans-serif;
+  --font-body: 'Nunito', 'Trebuchet MS', sans-serif;
+  --display-case: none;
+  --display-weight: 600;
+  --display-scale: 0.7;
+  --radius: 14px;
+  --rule-dashed: 2px dotted var(--color-ink);
+}
+
+/* Brunel: Victorian Bristol. Cream, engine green, brick red, double rules. */
+:root[data-theme="brunel"] {
+  --color-paper: #f3ead6;
+  --color-paper-hover: #e9dec5;
+  --color-ink: #1f3a2e;
+  --color-pink: #a33b2f;
+  --color-pink-text: #8c2f25;
+  --color-link-hover: #a33b2f;
+  --color-placeholder: #6d6a58;
+  --color-stripe: #e6dbc1;
+  --color-on-accent: #f3ead6;
+  --color-on-photo: #f3ead6;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Libre Baskerville', Georgia, serif;
+  --display-case: none;
+  --display-scale: 0.66;
+  --rule: 4px double var(--color-ink);
+  --rule-dashed: 1px dotted var(--color-ink);
+  --blend: normal;
+  --photo-filter: grayscale(1) sepia(0.5) contrast(1.25);
+}

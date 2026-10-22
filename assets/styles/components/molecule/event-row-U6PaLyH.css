@@ -13,16 +13,16 @@
 .m-event-row__month {
   flex: 0 0 96px;
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
   font-size: 32px;
   line-height: 1;
 }
 .m-event-row__main { flex: 1 1 300px; display: flex; flex-direction: column; gap: 4px; }
 .m-event-row__title {
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
   font-size: var(--fs-event-title);
   line-height: 0.95;
 }

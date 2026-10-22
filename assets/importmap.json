@@ -8,7 +8,7 @@
         "type": "js"
     },
     "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
-        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-9k9N9qd.js",
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-woDzeXH.js",
         "type": "js"
     },
     "\/assets\/controllers\/countdown_controller.js": {
@@ -27,12 +27,16 @@
         "path": "\/assets\/controllers\/talk_filter_controller-mcckGKr.js",
         "type": "js"
     },
+    "\/assets\/controllers\/theme_controller.js": {
+        "path": "\/assets\/controllers\/theme_controller-gKlxpGr.js",
+        "type": "js"
+    },
     "\/assets\/controllers\/year_filter_controller.js": {
         "path": "\/assets\/controllers\/year_filter_controller-rdI8fUc.js",
         "type": "js"
     },
     "\/assets\/styles\/app.css": {
-        "path": "\/assets\/styles\/app-q9fc-Zq.css",
+        "path": "\/assets\/styles\/app-yDwR4DD.css",
         "type": "css"
     },
     "@hotwired\/stimulus": {

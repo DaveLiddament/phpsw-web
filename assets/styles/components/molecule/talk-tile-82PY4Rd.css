@@ -17,8 +17,8 @@ a.m-talk-tile:hover { background: var(--color-paper-hover); color: var(--color-i
 .m-talk-tile__body { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
 .m-talk-tile__title {
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
   font-size: var(--fs-tile-title);
   line-height: 0.9;
   overflow-wrap: anywhere;

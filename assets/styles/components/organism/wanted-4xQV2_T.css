@@ -10,8 +10,8 @@
 .o-wanted__heading {
   flex: 1 1 420px;
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
   font-size: var(--fs-display-wanted);
   line-height: var(--lh-display-tight);
 }

@@ -11,7 +11,7 @@
   height: clamp(260px, 42vw, 560px);
   object-fit: cover;
   /* Grayscale photo multiplied onto pink: a riso duotone. */
-  filter: grayscale(1) contrast(1.35) brightness(1.1);
+  filter: var(--photo-filter);
   mix-blend-mode: multiply;
 }
 .o-photo-band__text {
@@ -23,9 +23,9 @@
   margin: 0 auto;
   padding: var(--gutter);
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
   font-size: var(--fs-photo-overlay);
   line-height: 0.85;
-  color: var(--color-paper);
+  color: var(--color-on-photo);
 }

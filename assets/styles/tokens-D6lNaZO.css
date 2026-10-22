@@ -1,0 +1,72 @@
+/* PHPSW Handbill — design tokens */
+:root {
+  /* Inks & paper */
+  --color-paper: #ede7da;
+  --color-paper-hover: #e3dccb;
+  --color-ink: #1f2a55;                 /* navy */
+  --color-pink: oklch(0.68 0.22 0);     /* ≈ #f0529c — always with mix-blend-mode: multiply */
+  --color-pink-text: oklch(0.5 0.2 0);  /* pink for text-on-paper hover */
+  --color-link-hover: oklch(0.62 0.22 0);
+  --color-placeholder: #5b6285;
+  --color-stripe: #e6dfcf;              /* striped embed placeholder */
+
+  /* Type */
+  --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif; /* 700, 900; uppercase */
+  --font-body: 'Courier Prime', Courier, monospace;                    /* 400, 700, italic 400 */
+
+  --fs-hero-day: calc(clamp(128px, 34vw, 440px) * var(--display-scale));
+  --fs-hero-month: calc(clamp(84px, 22vw, 290px) * var(--display-scale));
+  --fs-display-xl: calc(clamp(88px, 15vw, 220px) * var(--display-scale));
+  --fs-display-wanted: calc(clamp(88px, 14vw, 200px) * var(--display-scale));
+  --fs-display-lg: calc(clamp(60px, 10vw, 160px) * var(--display-scale));
+  --fs-title-single: calc(clamp(64px, 8.4vw, 128px) * var(--display-scale));
+  --fs-year: calc(clamp(64px, 9vw, 128px) * var(--display-scale));
+  --fs-photo-overlay: calc(clamp(40px, 7vw, 104px) * var(--display-scale));
+  --fs-display-md: calc(clamp(44px, 6vw, 80px) * var(--display-scale));
+  --fs-lineup-2: calc(clamp(44px, 5.4vw, 80px) * var(--display-scale));
+  --fs-lineup-3: calc(clamp(38px, 4.4vw, 64px) * var(--display-scale));
+  --fs-tile-title: calc(clamp(32px, 3vw, 44px) * var(--display-scale));
+  --fs-event-title: calc(clamp(28px, 3vw, 40px) * var(--display-scale));
+  --fs-tag-lg: calc(clamp(30px, 3.4vw, 46px) * var(--display-scale));
+  --fs-tag-md: calc(clamp(22px, 2.2vw, 30px) * var(--display-scale));
+  --fs-tag-sm: 22px;
+  --fs-body-lg: 18px;
+  --fs-body: 17px;
+  --fs-ui: 15px;
+  --fs-small: 14px;
+  --fs-cutline: 13px;
+
+  --lh-display: 0.86;
+  --lh-display-tight: 0.8;
+  --lh-body: 1.55;
+  --lh-list: 1.7;
+
+  /* Lines */
+  --rule: 3px solid var(--color-ink);
+  --rule-dashed: 1px dashed var(--color-ink);
+  --radius: 0;
+
+  /* Layout */
+  --container: 1280px;
+  --gutter: clamp(16px, 3vw, 40px);
+  --section-y: clamp(56px, 7vw, 104px);
+  --section-y-sm: clamp(28px, 4vw, 56px);
+  --tap: 44px;
+  --button-h: 52px;
+
+  /* Skin knobs: themes.css overrides these (and the tokens above) per skin */
+  --color-on-accent: var(--color-ink);   /* text on pink fills */
+  --color-on-photo: var(--color-paper);  /* text over the photo band */
+  --blend: multiply;                     /* riso overprint; 'normal' on dark skins */
+  --display-case: uppercase;
+  --display-weight: 900;
+  --display-scale: 1;                    /* <1 for display fonts wider than Big Shoulders */
+  --photo-filter: grayscale(1) contrast(1.35) brightness(1.1);
+
+  /* Motion */
+  --rotate-interval: 5000ms;
+  --fade: 300ms ease;
+}
+
+.ink-pink { color: var(--color-pink); mix-blend-mode: var(--blend); }
+.fill-pink { background: var(--color-pink); mix-blend-mode: var(--blend); }

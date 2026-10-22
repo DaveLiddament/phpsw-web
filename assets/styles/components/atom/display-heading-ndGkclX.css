@@ -1,7 +1,7 @@
 .a-display {
   font-family: var(--font-display);
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: var(--display-weight);
+  text-transform: var(--display-case);
 }
 .a-display--xl { font-size: var(--fs-display-xl); line-height: var(--lh-display-tight); }
 .a-display--lg { font-size: var(--fs-display-lg); line-height: 0.84; }

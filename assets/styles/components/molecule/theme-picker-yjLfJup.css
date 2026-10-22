@@ -1,0 +1,11 @@
+.m-theme-picker { display: inline-flex; align-items: center; gap: 8px; font-size: var(--fs-ui); font-weight: 700; }
+.m-theme-picker__select {
+  min-height: var(--tap);
+  padding: 0 10px;
+  border: var(--rule);
+  border-radius: var(--radius);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font: inherit;
+  cursor: pointer;
+}
