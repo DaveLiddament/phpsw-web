@@ -1,0 +1,17 @@
+.m-stat-figure {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 6px;
+  padding: 18px 20px;
+  border-right: var(--rule-dashed);
+  border-bottom: var(--rule-dashed);
+}
+.m-stat-figure__value {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: var(--fs-display-md);
+  line-height: 0.9;
+  color: var(--color-pink);
+  mix-blend-mode: multiply;
+}
+.m-stat-figure__label { font-size: var(--fs-ui); font-weight: 700; text-transform: uppercase; }

@@ -1,0 +1,16 @@
+.a-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-height: var(--button-h);
+  padding: 0 20px;
+  border: var(--rule);
+  border-radius: var(--radius);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--fs-body);
+  text-decoration: none;
+}
+.a-button:hover { background: var(--color-ink); color: var(--color-paper); }

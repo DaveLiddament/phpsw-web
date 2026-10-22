@@ -1,0 +1,8 @@
+.a-cut-line {
+  margin-top: 20px;
+  border-top: var(--rule);
+  padding-top: 10px;
+  font-size: var(--fs-cutline);
+  white-space: nowrap;
+  overflow: hidden;
+}

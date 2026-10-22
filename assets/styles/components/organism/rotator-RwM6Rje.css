@@ -1,0 +1,19 @@
+.o-rotator { max-width: var(--container); margin: 0 auto; padding: clamp(40px, 5vw, 72px) var(--gutter) 0; }
+.o-rotator__head, .o-stats-band__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px 24px;
+}
+.o-rotator__more, .o-stats-band__more { font-size: var(--fs-ui); }
+.o-rotator__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  margin-top: 6px;
+  border-left: var(--rule-dashed);
+  transition: opacity var(--fade);
+}
+.o-rotator__grid .m-talk-tile { min-height: 220px; }
+.o-rotator__grid .m-talk-tile__title { font-size: clamp(36px, 3.6vw, 52px); line-height: 0.88; }
+.o-rotator__grid.is-fading { opacity: 0; }

@@ -1,0 +1,31 @@
+.o-photo-band {
+  position: relative;
+  border-top: var(--rule);
+  border-bottom: var(--rule);
+  background: var(--color-pink);
+  overflow: hidden;
+}
+.o-photo-band__image {
+  display: block;
+  width: 100%;
+  height: clamp(260px, 42vw, 560px);
+  object-fit: cover;
+  /* Grayscale photo multiplied onto pink: a riso duotone. */
+  filter: grayscale(1) contrast(1.35) brightness(1.1);
+  mix-blend-mode: multiply;
+}
+.o-photo-band__text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--gutter);
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: var(--fs-photo-overlay);
+  line-height: 0.85;
+  color: var(--color-paper);
+}

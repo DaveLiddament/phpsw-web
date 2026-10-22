@@ -1,0 +1,16 @@
+.a-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--tap);
+  min-height: var(--tap);
+  padding: 0 12px;
+  border: var(--rule);
+  border-radius: var(--radius);
+  font-weight: 700;
+  font-size: var(--fs-ui);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.a-chip:hover { background: var(--color-paper-hover); color: var(--color-ink); }
+.a-chip--active, .a-chip--active:hover { background: var(--color-ink); color: var(--color-paper); }

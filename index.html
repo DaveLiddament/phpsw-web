@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>PHPSW · Bristol’s free PHP meetup</title>
+        <meta name="description" content="Bristol's free PHP meetup. Talks, pizza & pub, every second Wednesday.">
+        <link rel="canonical" href="https://phpsw.uk/">        <link rel="icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="preload" href="/assets/fonts/big-shoulders-display-latin-900-normal-ArTd8uj.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/fonts/courier-prime-latin-400-normal-jScH4Yw.woff2" as="font" type="font/woff2" crossorigin>
+        
+<link rel="stylesheet" href="/assets/styles/app-q9fc-Zq.css">
+<script type="importmap">
+{
+    "imports": {
+        "app": "/assets/app--q683F4.js",
+        "/assets/stimulus_bootstrap.js": "/assets/stimulus_bootstrap-xCO4u8H.js",
+        "/assets/styles/app.css": "data:application/javascript,",
+        "@symfony/stimulus-bundle": "/assets/@symfony/stimulus-bundle/loader-OHfh7x6.js",
+        "@hotwired/stimulus": "/assets/vendor/@hotwired/stimulus/stimulus.index-ryewcoo.js",
+        "/assets/@symfony/stimulus-bundle/controllers.js": "/assets/@symfony/stimulus-bundle/controllers-9k9N9qd.js",
+        "/assets/controllers/countdown_controller.js": "/assets/controllers/countdown_controller-pE73_od.js",
+        "/assets/controllers/rotator_controller.js": "/assets/controllers/rotator_controller-HQzESu5.js",
+        "/assets/controllers/speaker_filter_controller.js": "/assets/controllers/speaker_filter_controller-GtPd45q.js",
+        "/assets/controllers/talk_filter_controller.js": "/assets/controllers/talk_filter_controller-mcckGKr.js",
+        "/assets/controllers/year_filter_controller.js": "/assets/controllers/year_filter_controller-rdI8fUc.js"
+    }
+}
+</script><script>
+if (!HTMLScriptElement.supports || !HTMLScriptElement.supports('importmap')) (function () {
+    const script = document.createElement('script');
+    script.src = 'https://ga.jspm.io/npm:es-module-shims@1.10.0/dist/es-module-shims.js';
+    if (document.currentScript?.nonce) script.nonce = document.currentScript.nonce;
+    script.setAttribute('crossorigin', 'anonymous');
+    script.setAttribute('integrity', 'sha384-ie1x72Xck445i0j4SlNJ5W5iGeL3Dpa0zD48MZopgWsjNB/lt60SuG1iduZGNnJn');
+    document.head.appendChild(script);
+})();
+</script>
+<link rel="modulepreload" href="/assets/app--q683F4.js">
+<link rel="modulepreload" href="/assets/stimulus_bootstrap-xCO4u8H.js">
+<link rel="modulepreload" href="/assets/@symfony/stimulus-bundle/loader-OHfh7x6.js">
+<link rel="modulepreload" href="/assets/vendor/@hotwired/stimulus/stimulus.index-ryewcoo.js">
+<link rel="modulepreload" href="/assets/@symfony/stimulus-bundle/controllers-9k9N9qd.js">
+<link rel="modulepreload" href="/assets/controllers/countdown_controller-pE73_od.js">
+<link rel="modulepreload" href="/assets/controllers/rotator_controller-HQzESu5.js">
+<link rel="modulepreload" href="/assets/controllers/speaker_filter_controller-GtPd45q.js">
+<link rel="modulepreload" href="/assets/controllers/talk_filter_controller-mcckGKr.js">
+<link rel="modulepreload" href="/assets/controllers/year_filter_controller-rdI8fUc.js">
+<script type="module">import 'app';</script>    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="o-site-header">
+    <div class="o-site-header__inner">
+        <div class="o-site-header__brand">
+            <a class="a-logo" href="/">PHP<span class="ink-pink">SW</span><span class="visually-hidden"> home</span></a>
+
+            <p class="o-site-header__tagline">Bristol's free PHP meetup. Talks, pizza &amp; pub, every second Wednesday.</p>
+        </div>
+        <nav class="m-nav-links" aria-label="Main">
+    <a class="a-text-link" href="/events">Events</a>
+    <a class="a-text-link" href="/talks">Talks</a>
+    <a class="a-text-link" href="/#wanted">Speak</a>
+    <a class="a-text-link" href="https://www.meetup.com/php-sw">Meetup</a>
+</nav>
+
+    </div>
+</header>
+
+        <main id="main">
+                <section class="o-hero">
+            <div class="o-hero__date m-big-date">
+            <p class="m-big-date__label">Next meetup</p>
+            <p class="m-big-date__day ink-pink">2nd</p>
+            <p class="m-big-date__month">Wed.</p>
+        </div>
+        <div class="o-hero__details">
+            <p class="a-kicker">PHP South West meets on the second Wednesday of every month.</p>
+            <h1 class="o-lineup-single__title">Next one coming soon</h1>
+            <p class="o-lineup-single__abstract">We're lining up the speakers. Join the group on Meetup to hear first.</p>
+            <a class="a-button a-button--outline o-hero__rsvp" href="https://www.meetup.com/php-sw"><span>Join PHPSW on Meetup →</span></a>
+        </div>
+    </section>
+
+    <section class="o-photo-band">
+    <img class="o-photo-band__image" src="https://secure.meetupstatic.com/photos/event/5/f/d/9/clean_458184537.webp" alt="A PHPSW meetup" loading="lazy">
+    <p class="o-photo-band__text">Second Wednesday<br>of every month<br>since 2011</p>
+</section>
+
+    <section class="o-rotator" aria-labelledby="previously-heading">
+    <div class="o-rotator__head">
+        <h2 id="previously-heading" class="a-display a-display--md">Previously</h2>
+        <a class="o-rotator__more" href="/talks">Every talk →</a>
+    </div>
+    <div class="a-cut-line" aria-hidden="true">✂ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
+
+    <div class="o-rotator__grid" data-controller="rotator" data-action="mouseenter->rotator#pause mouseleave->rotator#resume focusin->rotator#pause focusout->rotator#resume" aria-live="polite">
+                    <a class="m-talk-tile m-talk-tile--md " href="/talks/jj-another-way-to-git" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Oct 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">jj: another way to Git</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Oliver Davies</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md " href="/talks/vibing-with-pikachu" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Sep 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Vibing with Pikachu</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Ade</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md " href="/talks/raising-the-profile-of-php-today" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Sep 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Raising the profile of PHP today</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Mike Page</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/improving-code-quality-under-pressure" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Jul 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Improving code quality under pressure</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Speaker TBC</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/meet-with-tech-building-the-platform-for-tech-communities" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Jul 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Meet with Tech: Building the platform for tech communities</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Tamas Erdelyi</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/50-tips-for-any-laravel-application" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Jun 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">50 Tips for Any Laravel Application</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Liam Hammett</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/microservices-and-monolithic-architectures-in-laravel" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Apr 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Microservices and Monolithic architectures in Laravel</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Joshua</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/mcp-servers-in-laravel-how-to-trust-ai-with-your-service" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Apr 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">MCP servers in Laravel - How to trust AI with your service</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Tom</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/escaping-the-code-maze" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Mar 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Escaping the Code Maze</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Yannick Chenot</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/securing-your-api-the-owasp-top-10" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Feb 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Securing Your API: The OWASP Top 10</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Rob Allen</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/nix-for-php-developers-and-everyone-else" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Jan 2026</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Nix for PHP Developers (and everyone else)</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Oliver Davies</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/scaling-writes-on-mysql" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Oct 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Scaling Writes on MySQL</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Graham Campbell</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/introduction-to-filament" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Sep 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Introduction to Filament</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Dan Harrin</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/agentic-applications-with-symfony" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Aug 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Agentic Applications with Symfony</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Christopher Hertel</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/observing-your-php-application-with-opentelemetry" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Jul 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Observing your PHP Application with OpenTelemetry</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Jess Smith</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/php-value-objects-and-you" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Jun 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">PHP, Value Objects and You 🫵</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Daniel Leech</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/beyond-requests-supercharging-api-monitoring-with-guzzle-middleware" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>May 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Beyond Requests: Supercharging API Monitoring with Guzzle Middleware</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Liam Hammett</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/turbocharging-your-api-development" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Mar 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Turbocharging your API development</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Nigel Dunn</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/mock-rest-apis-with-mockoon" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Feb 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Mock REST APIs with Mockoon</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Adrian Groves</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/introducing-phpstan-to-a-legacy-code-base" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Feb 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Introducing PHPStan to a legacy code base</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Chris Ballard</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/the-right-kind-of-wrong-when-good-code-isnt-worth-it" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Feb 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">The Right Kind of Wrong: When ‘Good’ code Isn’t Worth It</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Ben Lumley</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/using-blueprint-for-rapid-application-development-with-laravel" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Feb 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Using Blueprint for rapid application development with Laravel</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Mike Karthauser</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/q-and-a-how-can-developers-be-product-minded" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Jan 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Q&amp;A: How can developers be product-minded</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Emily Cook</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/writing-an-expression-language-from-scratch-in-45-minutes" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Jan 2025</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Writing an Expression Language from Scratch in 45 minutes</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Daniel Leech</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/q-and-a-transitioning-to-management" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Nov 2024</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Q&amp;A: Transitioning to Management</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Lee Stone</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/scratching-an-itch-scratch-file-superpowers" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Nov 2024</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Scratching an Itch: Scratch File Superpowers</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Liam Hammett</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/not-another-talk-about-testing" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Oct 2024</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Not another talk about testing!</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Jon White</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/software-vs-web-what-sets-them-apart" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Sep 2024</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Software vs Web: What Sets Them Apart?</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Adam Tomat</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/the-current-state-of-the-php-market" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Aug 2024</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">The current state of the PHP market</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Beya Durante</span>
+
+    </span>
+</a>
+
+                    <a class="m-talk-tile m-talk-tile--md is-hidden" href="/talks/scaling-personal-projects" data-rotator-target="tile">
+    <span class="m-talk-tile__top">
+        <span>Aug 2024</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Scaling Personal Projects</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Ferdie De Oliveria</span>
+
+    </span>
+</a>
+
+            </div>
+</section>
+
+    <section class="o-stats-band" aria-labelledby="stats-heading">
+    <div class="o-stats-band__head">
+        <h2 id="stats-heading" class="a-display a-display--md">By the <span class="ink-pink">numbers</span></h2>
+        <a class="o-stats-band__more" href="/stats">More stats →</a>
+    </div>
+    <dl class="o-stats-band__grid">
+        <div class="m-stat-figure">
+    <dt class="m-stat-figure__label">Meetups</dt>
+    <dd class="m-stat-figure__value">159</dd>
+</div>
+
+        <div class="m-stat-figure">
+    <dt class="m-stat-figure__label">Talks</dt>
+    <dd class="m-stat-figure__value">342</dd>
+</div>
+
+        <div class="m-stat-figure">
+    <dt class="m-stat-figure__label">Speakers</dt>
+    <dd class="m-stat-figure__value">171</dd>
+</div>
+
+        <div class="m-stat-figure">
+    <dt class="m-stat-figure__label">Years</dt>
+    <dd class="m-stat-figure__value">15</dd>
+</div>
+
+    </dl>
+</section>
+
+    <section class="o-wanted" id="wanted">
+    <h2 class="o-wanted__heading">Wanted:<br><span class="ink-pink">Speakers</span></h2>
+    <div class="o-wanted__copy">
+        <p>No experience needed. Lots of our regulars gave their first ever talk here.</p>
+        <p>10 minutes (lightning) or 30–40 minutes (full). Anything PHP or near it.</p>
+        <p>Apply to: <a href="mailto:info@phpsw.uk"><b>info@phpsw.uk</b></a></p>
+    </div>
+</section>
+
+        </main>
+        <footer class="o-site-footer">
+    <div class="o-site-footer__inner">
+                            <p class="o-site-footer__sponsors">Food, drink and rooms kindly paid for by
+                <a href="https://www.lampbristol.com/">Lamp Bristol</a>, <a href="https://www.tcnuk.co.uk/temple-1852">Temple Studios</a>, <a href="https://www.signable.co.uk/">Signable</a>, <a href="https://www.pinnacaretail.com/">Pinnaca</a> and <a href="https://www.basekit.com/">BaseKit</a>.
+                <a href="/sponsors">Every sponsor</a>.</p>
+                <p class="o-site-footer__links">
+            <a href="https://twitter.com/phpsw">@phpsw</a> ·
+            <a href="https://github.com/phpsw">GitHub</a> ·
+            <a href="/code-of-conduct">Code of conduct</a> ·
+            <a href="/speakers">Speakers</a> ·
+            <a href="/stats">Stats</a> ·
+            <a href="/brand">Brand</a> · Organised by <a href="/speakers/dave-liddament">Dave Liddament</a>, <a href="/speakers/lee-stone">Lee Stone</a> & <a href="/speakers/naomi-gotts">Naomi Gotts</a>        </p>
+    </div>
+</footer>
+
+    </body>
+</html>

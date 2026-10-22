@@ -1,0 +1,8 @@
+.m-evening-info {
+  margin-top: 26px;
+  font-size: var(--fs-body);
+  line-height: var(--lh-list);
+  border-top: var(--rule);
+  border-bottom: var(--rule);
+  padding: 10px 0;
+}

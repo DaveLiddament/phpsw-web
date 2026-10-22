@@ -1,0 +1,13 @@
+.m-event-talk-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding: 12px 0;
+  border-top: var(--rule-dashed);
+  font-size: var(--fs-body);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.m-event-talk-row:hover { color: var(--color-pink-text); }
+.m-event-talk-row__title { font-weight: 700; }

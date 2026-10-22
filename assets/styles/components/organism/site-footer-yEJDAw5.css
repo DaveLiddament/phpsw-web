@@ -1,0 +1,10 @@
+.o-site-footer { border-top: var(--rule); }
+.o-site-footer__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 24px var(--gutter) 40px;
+  font-size: var(--fs-ui);
+  line-height: var(--lh-list);
+}
+.o-site-footer__sponsors { max-width: 80ch; }
+.o-site-footer__links { margin-top: 12px; }

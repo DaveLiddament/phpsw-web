@@ -1,0 +1,13 @@
+.a-text-input { display: flex; flex: 1 1 280px; }
+.a-text-input__field {
+  width: 100%;
+  min-height: var(--button-h);
+  padding: 0 16px;
+  border: var(--rule);
+  border-radius: var(--radius);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font: inherit;
+  font-size: var(--fs-body);
+}
+.a-text-input__field::placeholder { color: var(--color-placeholder); }

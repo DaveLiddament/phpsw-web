@@ -1,0 +1,7 @@
+.o-related__heading {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 0.9;
+}

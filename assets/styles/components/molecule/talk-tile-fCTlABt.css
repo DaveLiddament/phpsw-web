@@ -1,0 +1,29 @@
+.m-talk-tile {
+  min-height: 240px;
+  border-right: var(--rule-dashed);
+  border-bottom: var(--rule-dashed);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 20px;
+  color: var(--color-ink);
+  text-decoration: none;
+  transition: opacity var(--fade);
+}
+a.m-talk-tile:hover { background: var(--color-paper-hover); color: var(--color-ink); }
+.m-talk-tile--sm { min-height: 200px; gap: 20px; }
+.m-talk-tile__top { display: flex; justify-content: space-between; gap: 12px; font-size: var(--fs-small); }
+.m-talk-tile__body { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.m-talk-tile__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: var(--fs-tile-title);
+  line-height: 0.9;
+  overflow-wrap: anywhere;
+}
+.m-talk-tile--sm .m-talk-tile__title { font-size: clamp(30px, 2.8vw, 40px); }
+.m-talk-tile--sm .a-speaker-tag { font-size: 20px; }
+.m-talk-tile__note { font-size: var(--fs-small); }
+.m-sponsor-tile .m-talk-tile__title a { text-decoration: none; }

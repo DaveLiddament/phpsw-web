@@ -1,0 +1,19 @@
+.o-wanted {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--section-y) var(--gutter);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px clamp(24px, 5vw, 72px);
+  align-items: flex-end;
+}
+.o-wanted__heading {
+  flex: 1 1 420px;
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: var(--fs-display-wanted);
+  line-height: var(--lh-display-tight);
+}
+.o-wanted__copy { flex: 1 1 340px; font-size: var(--fs-body-lg); line-height: 1.6; }
+.o-wanted__copy p + p { margin-top: 14px; }

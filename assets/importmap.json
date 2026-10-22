@@ -1,0 +1,46 @@
+{
+    "app": {
+        "path": "\/assets\/app--q683F4.js",
+        "type": "js"
+    },
+    "\/assets\/stimulus_bootstrap.js": {
+        "path": "\/assets\/stimulus_bootstrap-xCO4u8H.js",
+        "type": "js"
+    },
+    "\/assets\/@symfony\/stimulus-bundle\/controllers.js": {
+        "path": "\/assets\/@symfony\/stimulus-bundle\/controllers-9k9N9qd.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/countdown_controller.js": {
+        "path": "\/assets\/controllers\/countdown_controller-pE73_od.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/rotator_controller.js": {
+        "path": "\/assets\/controllers\/rotator_controller-HQzESu5.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/speaker_filter_controller.js": {
+        "path": "\/assets\/controllers\/speaker_filter_controller-GtPd45q.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/talk_filter_controller.js": {
+        "path": "\/assets\/controllers\/talk_filter_controller-mcckGKr.js",
+        "type": "js"
+    },
+    "\/assets\/controllers\/year_filter_controller.js": {
+        "path": "\/assets\/controllers\/year_filter_controller-rdI8fUc.js",
+        "type": "js"
+    },
+    "\/assets\/styles\/app.css": {
+        "path": "\/assets\/styles\/app-q9fc-Zq.css",
+        "type": "css"
+    },
+    "@hotwired\/stimulus": {
+        "path": "\/assets\/vendor\/@hotwired\/stimulus\/stimulus.index-ryewcoo.js",
+        "type": "js"
+    },
+    "@symfony\/stimulus-bundle": {
+        "path": "\/assets\/@symfony\/stimulus-bundle\/loader-OHfh7x6.js",
+        "type": "js"
+    }
+}

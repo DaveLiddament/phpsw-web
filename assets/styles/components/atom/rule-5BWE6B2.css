@@ -1,0 +1,3 @@
+.a-rule { border: 0; margin: 0; }
+.a-rule--solid { border-top: var(--rule); }
+.a-rule--dashed { border-top: var(--rule-dashed); }

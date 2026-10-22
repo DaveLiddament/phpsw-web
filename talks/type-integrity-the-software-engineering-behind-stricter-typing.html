@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Type Integrity: The Software Engineering Behind Stricter Typing · PHPSW</title>
+        <meta name="description" content="Back in January, PHPSW had two great talks from Rob Allen (@akrabat) and Dave Liddament (@daveliddament) on the static analysis tools that the PHP communit">
+        <link rel="canonical" href="https://phpsw.uk/talks/type-integrity-the-software-engineering-behind-stricter-typing">        <link rel="icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="preload" href="/assets/fonts/big-shoulders-display-latin-900-normal-ArTd8uj.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/fonts/courier-prime-latin-400-normal-jScH4Yw.woff2" as="font" type="font/woff2" crossorigin>
+        
+<link rel="stylesheet" href="/assets/styles/app-q9fc-Zq.css">
+<script type="importmap">
+{
+    "imports": {
+        "app": "/assets/app--q683F4.js",
+        "/assets/stimulus_bootstrap.js": "/assets/stimulus_bootstrap-xCO4u8H.js",
+        "/assets/styles/app.css": "data:application/javascript,",
+        "@symfony/stimulus-bundle": "/assets/@symfony/stimulus-bundle/loader-OHfh7x6.js",
+        "@hotwired/stimulus": "/assets/vendor/@hotwired/stimulus/stimulus.index-ryewcoo.js",
+        "/assets/@symfony/stimulus-bundle/controllers.js": "/assets/@symfony/stimulus-bundle/controllers-9k9N9qd.js",
+        "/assets/controllers/countdown_controller.js": "/assets/controllers/countdown_controller-pE73_od.js",
+        "/assets/controllers/rotator_controller.js": "/assets/controllers/rotator_controller-HQzESu5.js",
+        "/assets/controllers/speaker_filter_controller.js": "/assets/controllers/speaker_filter_controller-GtPd45q.js",
+        "/assets/controllers/talk_filter_controller.js": "/assets/controllers/talk_filter_controller-mcckGKr.js",
+        "/assets/controllers/year_filter_controller.js": "/assets/controllers/year_filter_controller-rdI8fUc.js"
+    }
+}
+</script><script>
+if (!HTMLScriptElement.supports || !HTMLScriptElement.supports('importmap')) (function () {
+    const script = document.createElement('script');
+    script.src = 'https://ga.jspm.io/npm:es-module-shims@1.10.0/dist/es-module-shims.js';
+    if (document.currentScript?.nonce) script.nonce = document.currentScript.nonce;
+    script.setAttribute('crossorigin', 'anonymous');
+    script.setAttribute('integrity', 'sha384-ie1x72Xck445i0j4SlNJ5W5iGeL3Dpa0zD48MZopgWsjNB/lt60SuG1iduZGNnJn');
+    document.head.appendChild(script);
+})();
+</script>
+<link rel="modulepreload" href="/assets/app--q683F4.js">
+<link rel="modulepreload" href="/assets/stimulus_bootstrap-xCO4u8H.js">
+<link rel="modulepreload" href="/assets/@symfony/stimulus-bundle/loader-OHfh7x6.js">
+<link rel="modulepreload" href="/assets/vendor/@hotwired/stimulus/stimulus.index-ryewcoo.js">
+<link rel="modulepreload" href="/assets/@symfony/stimulus-bundle/controllers-9k9N9qd.js">
+<link rel="modulepreload" href="/assets/controllers/countdown_controller-pE73_od.js">
+<link rel="modulepreload" href="/assets/controllers/rotator_controller-HQzESu5.js">
+<link rel="modulepreload" href="/assets/controllers/speaker_filter_controller-GtPd45q.js">
+<link rel="modulepreload" href="/assets/controllers/talk_filter_controller-mcckGKr.js">
+<link rel="modulepreload" href="/assets/controllers/year_filter_controller-rdI8fUc.js">
+<script type="module">import 'app';</script>    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="o-site-header">
+    <div class="o-site-header__inner">
+        <div class="o-site-header__brand">
+            <a class="a-logo" href="/">PHP<span class="ink-pink">SW</span><span class="visually-hidden"> home</span></a>
+
+            <p class="o-site-header__tagline">Bristol's free PHP meetup. Talks, pizza &amp; pub, every second Wednesday.</p>
+        </div>
+        <nav class="m-nav-links" aria-label="Main">
+    <a class="a-text-link" href="/events">Events</a>
+    <a class="a-text-link a-text-link--active" href="/talks" aria-current="page">Talks</a>
+    <a class="a-text-link" href="/#wanted">Speak</a>
+    <a class="a-text-link" href="https://www.meetup.com/php-sw">Meetup</a>
+</nav>
+
+    </div>
+</header>
+
+        <main id="main">
+                        <div class="t-detail">
+    <section class="t-detail__head">
+        <a class="t-detail__back" href="/talks">← All talks</a>
+        <p class="a-kicker t-detail__kicker">Given at PHPSW · April 2020</p>
+        <h1 class="t-detail__title">Type Integrity: The Software Engineering Behind Stricter Typing</h1>
+        <div class="t-detail__tags">                                <a class="a-speaker-tag a-speaker-tag--lg" href="/speakers/stuart-herbert">Stuart Herbert</a>
+
+                    </div>
+    </section>
+    <section class="t-detail__body">
+        <div class="t-detail__columns">
+            <article class="t-detail__article">            <p class="t-detail__paragraph">Back in January, PHPSW had two great talks from Rob Allen (@akrabat) and Dave Liddament (@daveliddament) on the static analysis tools that the PHP community has built around stricter typing. If you missed them, you can check them out here: https://joind.in/event/phpsw-jan-2020.</p>
+                    <p class="t-detail__paragraph">But what is &quot;stricter typing&quot;? What problems does it solve, and how do you use it to solve them?</p>
+                    <p class="t-detail__paragraph">In this talk, Stuart will introduce you to the fundamental principles involved. He&#039;ll show you the basics of &quot;robustness&quot; and &quot;correctness&quot; in your software engineering, the costs of tackling those using defensive programming and Design by Contract(™), and how to use stricter typing to bring those costs right down.</p>
+                    <p class="t-detail__paragraph">Although the examples are written in PHP, these are basic principles that apply to all software. You don&#039;t have to be a PHP programmer to get something out of this talk.</p>
+                        </article>
+            <aside class="t-detail__aside"><dl class="o-meta">
+    <div class="m-meta-pair">
+    <dt class="m-meta-pair__label">Given at</dt>
+    <dd class="m-meta-pair__value"><a href="/events/2020-04-type-integrity-intensive-data-online">Type Integrity &amp; Intensive Data (Online)</a><br>April 2020
+    </dd>
+</div>
+    <div class="m-meta-pair">
+    <dt class="m-meta-pair__label">Where</dt>
+    <dd class="m-meta-pair__value">Online    </dd>
+</div>
+            <div class="m-meta-pair">
+    <dt class="m-meta-pair__label">Topic</dt>
+    <dd class="m-meta-pair__value"><a href="/talks?topic=Language">Language</a>
+        </dd>
+</div>
+        <div class="m-meta-pair">
+    <dt class="m-meta-pair__label">Slides</dt>
+    <dd class="m-meta-pair__value">Not uploaded yet    </dd>
+</div>
+        </dl>
+</aside>
+        </div>
+    </section>
+    <div class="t-detail__after">    <section class="o-related">
+        <h2 class="o-related__heading">Also that night</h2>
+        <div class="o-talk-grid">
+                        <a class="m-talk-tile m-talk-tile--sm" href="/talks/data-intensive-applications-in-php">
+    <span class="m-talk-tile__top">
+        <span>Apr 2020</span>
+            </span>
+    <span class="m-talk-tile__body">
+        <span class="m-talk-tile__title">Data Intensive Applications in PHP</span>
+            <span class="a-speaker-tag a-speaker-tag--sm">Doug Fitzmaurice</span>
+
+    </span>
+</a>
+
+            </div>
+
+    </section>
+</div>
+</div>
+        </main>
+        <footer class="o-site-footer">
+    <div class="o-site-footer__inner">
+                            <p class="o-site-footer__sponsors">Food, drink and rooms kindly paid for by
+                <a href="https://www.lampbristol.com/">Lamp Bristol</a>, <a href="https://www.tcnuk.co.uk/temple-1852">Temple Studios</a>, <a href="https://www.signable.co.uk/">Signable</a>, <a href="https://www.pinnacaretail.com/">Pinnaca</a> and <a href="https://www.basekit.com/">BaseKit</a>.
+                <a href="/sponsors">Every sponsor</a>.</p>
+                <p class="o-site-footer__links">
+            <a href="https://twitter.com/phpsw">@phpsw</a> ·
+            <a href="https://github.com/phpsw">GitHub</a> ·
+            <a href="/code-of-conduct">Code of conduct</a> ·
+            <a href="/speakers">Speakers</a> ·
+            <a href="/stats">Stats</a> ·
+            <a href="/brand">Brand</a> · Organised by <a href="/speakers/dave-liddament">Dave Liddament</a>, <a href="/speakers/lee-stone">Lee Stone</a> & <a href="/speakers/naomi-gotts">Naomi Gotts</a>        </p>
+    </div>
+</footer>
+
+    </body>
+</html>

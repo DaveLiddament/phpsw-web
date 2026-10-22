@@ -1,0 +1,14 @@
+.o-lineup-single__link { display: block; color: var(--color-ink); text-decoration: none; }
+.o-lineup-single__link:hover { color: var(--color-pink-text); }
+.o-lineup-single__title {
+  margin-top: 14px;
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: var(--fs-title-single);
+  line-height: var(--lh-display);
+  letter-spacing: -0.005em;
+}
+.o-lineup-single .a-speaker-tag { margin-top: 16px; }
+.o-lineup-single__abstract { margin-top: 22px; font-size: var(--fs-body); line-height: var(--lh-body); max-width: 44ch; }
+.o-lineup-list { margin-top: 14px; display: flex; flex-direction: column; font-size: inherit; }

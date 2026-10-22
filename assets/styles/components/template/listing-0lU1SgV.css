@@ -1,0 +1,9 @@
+.t-listing {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: clamp(28px, 4vw, 56px) var(--gutter) var(--section-y);
+}
+.t-listing__heading { margin-top: 10px; overflow-wrap: anywhere; }
+.t-listing__controls { margin-top: 28px; }
+.t-listing__count { margin-top: 14px; font-size: var(--fs-ui); }
+.t-listing__empty { margin-top: 32px; font-size: var(--fs-body-lg); }

@@ -1,0 +1,18 @@
+.a-speaker-tag, .a-tag {
+  display: inline-block;
+  background: var(--color-pink);
+  mix-blend-mode: multiply;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  text-decoration: none;
+  padding: 3px 8px 1px;
+}
+.a-speaker-tag--sm { font-size: var(--fs-tag-sm); }
+.a-speaker-tag--md { font-size: var(--fs-tag-md); }
+.a-speaker-tag--lg { font-size: var(--fs-tag-lg); padding: 4px 10px 2px; }
+a.a-speaker-tag:hover { color: var(--color-paper); }
+
+.a-tag { font-size: 20px; padding: 2px 8px 0; }

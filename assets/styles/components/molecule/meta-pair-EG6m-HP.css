@@ -1,0 +1,4 @@
+.m-meta-pair { padding: 12px 0; border-top: var(--rule-dashed); overflow-wrap: anywhere; }
+.m-meta-pair:first-child { border-top: var(--rule); }
+.m-meta-pair:last-child { border-bottom: var(--rule); }
+.m-meta-pair__label { font-weight: 700; }

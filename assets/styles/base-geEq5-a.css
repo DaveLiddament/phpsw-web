@@ -1,0 +1,37 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-ui);
+  min-height: 100vh;
+  /* Display type bleeds on purpose; clip it rather than scroll. */
+  overflow-x: hidden;
+}
+
+a { color: var(--color-ink); text-decoration: underline; text-underline-offset: 3px; }
+a:hover { color: var(--color-link-hover); }
+
+:focus-visible { outline: 3px solid var(--color-pink); outline-offset: 2px; }
+
+img { max-width: 100%; }
+
+h1, h2, h3, p, dl, dd, figure { margin: 0; }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.skip-link { position: absolute; left: -9999px; }
+.skip-link:focus { left: var(--gutter); top: 8px; z-index: 10; background: var(--color-paper); padding: 8px; }
+
+.is-hidden, [hidden] { display: none !important; }

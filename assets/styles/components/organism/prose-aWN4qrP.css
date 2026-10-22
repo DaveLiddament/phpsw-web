@@ -1,0 +1,15 @@
+.o-prose { max-width: 70ch; font-size: var(--fs-body); line-height: 1.6; }
+.o-prose p, .o-prose ul { margin: 0 0 16px; }
+.o-prose h2 {
+  margin: 36px 0 12px;
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 0.95;
+}
+.o-brand { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 40px; }
+.o-brand__item p { margin-top: 12px; }
+.o-brand__preview { display: block; margin-top: 16px; padding: 24px; border: var(--rule); }
+.o-brand__preview img { display: block; width: 100%; max-height: 180px; object-fit: contain; }
+.o-brand__preview--dark { background: var(--color-ink); }

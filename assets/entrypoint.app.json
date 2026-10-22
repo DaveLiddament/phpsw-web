@@ -1,0 +1,12 @@
+[
+    "\/assets\/stimulus_bootstrap.js",
+    "\/assets\/styles\/app.css",
+    "@symfony\/stimulus-bundle",
+    "@hotwired\/stimulus",
+    "\/assets\/@symfony\/stimulus-bundle\/controllers.js",
+    "\/assets\/controllers\/countdown_controller.js",
+    "\/assets\/controllers\/rotator_controller.js",
+    "\/assets\/controllers\/speaker_filter_controller.js",
+    "\/assets\/controllers\/talk_filter_controller.js",
+    "\/assets\/controllers\/year_filter_controller.js"
+]

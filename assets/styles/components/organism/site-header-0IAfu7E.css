@@ -1,0 +1,14 @@
+.o-site-header { border-bottom: var(--rule); }
+.o-site-header__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 14px var(--gutter);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 24px;
+  font-size: var(--fs-ui);
+}
+.o-site-header__brand { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.o-site-header__tagline { max-width: 34ch; line-height: 1.35; }
