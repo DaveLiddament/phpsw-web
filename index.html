@@ -69,17 +69,25 @@ if (!HTMLScriptElement.supports || !HTMLScriptElement.supports('importmap')) (fu
 
         <main id="main">
                 <section class="o-hero">
-            <div class="o-hero__date m-big-date">
-            <p class="m-big-date__label">Next meetup</p>
-            <p class="m-big-date__day ink-pink">2nd</p>
-            <p class="m-big-date__month">Wed.</p>
-        </div>
+                    <div class="m-big-date o-hero__date">
+    <p class="m-big-date__label">Next meetup · Wednesday</p>
+    <p class="m-big-date__day ink-pink" aria-hidden="true">11</p>
+    <p class="m-big-date__month" aria-hidden="true">Nov.</p>
+    <p class="visually-hidden">11 November 2026</p>
+</div>
+
         <div class="o-hero__details">
-            <p class="a-kicker">PHP South West meets on the second Wednesday of every month.</p>
-            <h1 class="o-lineup-single__title">Next one coming soon</h1>
-            <p class="o-lineup-single__abstract">We're lining up the speakers. Join the group on Meetup to hear first.</p>
-            <a class="a-button a-button--outline o-hero__rsvp" href="https://www.meetup.com/php-sw"><span>Join PHPSW on Meetup →</span></a>
-        </div>
+            <p class="a-kicker">PHP South West presents, for its 160th meeting:</p>
+                            <h1 class="o-lineup-single__title o-hero__event-title"><a href="/events/2026-11-php-sw-lightning-talks">PHP-SW Lightning talks</a></h1>
+                <p class="o-lineup-single__abstract">For our final meetup of the year we will be doing lightning talks.</p>                        <p class="m-evening-info">
+    Doors &amp; food ........ 6.30pm<br>
+    Talks start ......... 7.05pm<br>
+    Finish, then pub .... 8.30pm<br>
+    <b>Temple Studios, Temple Gate</b>
+</p>
+
+                            <a class="a-button a-button--outline o-hero__rsvp" href="https://www.meetup.com/php-sw/events/317102755/"><span>RSVP on Meetup (<span data-controller="countdown" data-countdown-start-value="2026-11-11T18:30:00+00:00">20 days to go</span>) →</span></a>
+                    </div>
     </section>
 
     <section class="o-photo-band">
@@ -470,7 +478,7 @@ if (!HTMLScriptElement.supports || !HTMLScriptElement.supports('importmap')) (fu
         <footer class="o-site-footer">
     <div class="o-site-footer__inner">
                             <p class="o-site-footer__sponsors">Food, drink and rooms kindly paid for by
-                <a href="https://www.lampbristol.com/">Lamp Bristol</a>.
+                <a href="https://www.lampbristol.com/">Lamp Bristol</a> and <a href="https://www.tcnuk.co.uk/temple-1852">Temple Studios</a>.
                 <a href="/sponsors">Every sponsor</a>.</p>
                 <p class="o-site-footer__links">
             <a href="https://twitter.com/phpsw">@phpsw</a> ·
