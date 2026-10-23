@@ -1,18 +1,22 @@
-/* PHPSW Handbill — design tokens */
+/*
+ * PHPSW design tokens: the "Elephpant" look (PHP's blue-violet, rounded type)
+ * on the Handbill layout (design_handoff_phpsw_handbill/). The "pink" tokens
+ * are the accent colour; they kept the Handbill's names.
+ */
 :root {
   /* Inks & paper */
-  --color-paper: #ede7da;
-  --color-paper-hover: #e3dccb;
-  --color-ink: #1f2a55;                 /* navy */
-  --color-pink: oklch(0.68 0.22 0);     /* ≈ #f0529c — always with mix-blend-mode: multiply */
-  --color-pink-text: oklch(0.5 0.2 0);  /* pink for text-on-paper hover */
-  --color-link-hover: oklch(0.62 0.22 0);
-  --color-placeholder: #5b6285;
-  --color-stripe: #e6dfcf;              /* striped embed placeholder */
+  --color-paper: #f4f3fb;
+  --color-paper-hover: #e8e6f6;
+  --color-ink: #2d2b55;                 /* deep indigo */
+  --color-pink: #8892bf;                /* accent: elephpant blue-violet */
+  --color-pink-text: #4f57a0;           /* accent for text-on-paper hover */
+  --color-link-hover: #4f57a0;
+  --color-placeholder: #6e6c93;
+  --color-stripe: #e9e7f5;              /* striped embed placeholder */
 
   /* Type */
-  --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif; /* 700, 900; uppercase */
-  --font-body: 'Courier Prime', Courier, monospace;                    /* 400, 700, italic 400 */
+  --font-display: 'Fredoka', 'Trebuchet MS', sans-serif; /* 600 */
+  --font-body: 'Nunito', 'Trebuchet MS', sans-serif;     /* 400, 700 */
 
   --fs-hero-day: calc(clamp(128px, 34vw, 440px) * var(--display-scale));
   --fs-hero-month: calc(clamp(84px, 22vw, 290px) * var(--display-scale));
@@ -43,8 +47,8 @@
 
   /* Lines */
   --rule: 3px solid var(--color-ink);
-  --rule-dashed: 1px dashed var(--color-ink);
-  --radius: 0;
+  --rule-dashed: 2px dotted var(--color-ink);
+  --radius: 14px;
 
   /* Layout */
   --container: 1280px;
@@ -54,13 +58,13 @@
   --tap: 44px;
   --button-h: 52px;
 
-  /* Skin knobs: themes.css overrides these (and the tokens above) per skin */
-  --color-on-accent: var(--color-ink);   /* text on pink fills */
-  --color-on-photo: var(--color-paper);  /* text over the photo band */
-  --blend: multiply;                     /* riso overprint; 'normal' on dark skins */
-  --display-case: uppercase;
-  --display-weight: 900;
-  --display-scale: 1;                    /* <1 for display fonts wider than Big Shoulders */
+  /* Look */
+  --color-on-accent: var(--color-ink);   /* text on accent fills */
+  --color-on-photo: #ffffff;             /* text over the photo band */
+  --blend: multiply;                     /* accent overprints the paper */
+  --display-case: none;
+  --display-weight: 600;
+  --display-scale: 0.7;                  /* Fredoka is wider than the Handbill's Big Shoulders */
   --photo-filter: grayscale(1) contrast(1.35) brightness(1.1);
 
   /* Motion */
